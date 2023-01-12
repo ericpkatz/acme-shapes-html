@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: verdana;
+}
+
+
+.shapes > div {
+  float: left;
+  width: calc(100%/3 - 1rem);
+  padding: 0.5rem;
+  margin: 0.5rem;
+  aspect-ratio: 1 / 1;
+}
+
+.shapes > div:first-child {
+  background-color: red;
+}
+.shapes > div:nth-child(2) {
+  background-color: blue;
+}
+.shapes > div:last-child {
+  background-color: yellow;
+}
+
+.circles > div {
+  border-radius: 50%;
+}
+  </style>
+  <title>Acme Shapes</title>
+</head>
+<body>
+  <h1>I Like Shapes</h1>
+  <div>
+    <h2>Squares</h2>
+    <div class='shapes'>
+      <div>Red</div>
+      <div>Blue</div>
+      <div>Yellow</div>
+    </div>
+  </div>
+  <div>
+    <h2>Circles</h2>
+    <div class='shapes circles'>
+      <div>Red</div>
+      <div>Blue</div>
+      <div>Yellow</div>
+    </div>
+  </div> 
+</body>
+</html>
